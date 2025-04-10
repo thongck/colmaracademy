@@ -1,0 +1,267 @@
+/* import font from Google CDN */
+@import url('href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap"');
+
+
+/* Reset CSS */
+/* Universal selector (*) targets every element (regardless tag, class, ID) */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: [full--start] 0.6fr [center--end center--start] 0.4fr [full--end];
+    grid-template-rows: repeat(6, min-content);
+}
+
+/* --------------------------------------------------- */
+/* Start of desktop view */
+/* --------------------------------------------------- */
+.desktop-nav {
+    grid-column: full--start/full--end;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.desktop-nav > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 2rem;
+    padding-left: 1.5rem;
+
+}
+
+.logo-name{
+    font-size: 1rem;
+    text-transform: uppercase;    
+}
+
+.logo-name-bold{
+    font-weight: bold;
+    color: #484848;
+}
+
+.logo-name-thin{
+    font-weight: 400;
+    color: #aaa;
+    margin-left: 0.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list a {
+    display: inline-block;
+    text-decoration: none;
+    color: #828282;
+    font-size: 1rem;
+    margin: 0 10px;
+
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.nav-item:last-child {
+    margin-right: 1.5rem;
+}
+
+/* Start of desktop header view */
+.header-picture {
+    display: flex;
+    background-color: #c8c8c8;
+
+}
+
+.header-picture img {
+    padding: 2rem 0 2rem 1.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    padding-left: 1.5rem;
+    background-color: #c8c8c8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.header-content div h1 {
+    font-size: 2.5rem;
+    color: #484848;
+}
+
+.header-content div h2 {
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: #484848;
+    padding: 1rem 0;
+}
+
+.header-content div{
+    display: block;
+    width: 80%;
+}
+
+.header-content div a:link
+{
+    display: block;
+    width: 100%;
+    align-self: stretch;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    background-color: #4a4a4a;
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-content div a:visited,
+.header-content div a:active {
+    color: #fff;
+    background-color: #4a4a4a;
+    text-decoration: none;
+
+}
+
+.header-content div a:hover {
+    background-color: rgba(72,72,72,0.5);
+}
+
+/* End of desktop header view */
+
+/* Set up practice section */
+.practice{
+    background-color: #f0f0f0;
+    padding: 2rem 1.5rem;
+}
+
+.practice img{
+    width: 100%;
+    height: auto;
+}
+
+.practice h3{
+    padding: 2rem 0 1.5rem 0;
+    color: #484848;
+}
+
+.practice p{
+    font-size: small;
+    color: #484848;
+}
+
+.quote-name{
+    display: block;
+    margin: 2rem 0;
+}
+
+.events{
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    border-left: 1px solid #e7e7e7;
+    padding-top: 1rem;
+}
+
+.event-block{
+    display: grid;
+    grid-template-columns: 0.35fr 0.65fr;
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: small;
+    color: #484848;;
+}
+
+.event-block img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.event-block-content{
+    margin: 0 2rem;
+}
+
+.event-block-content h4{
+    font-size: 1rem;
+}
+
+.event-block-content p{
+    font-size: 0.8rem;
+    padding: 0.25rem 0;
+}
+
+.event-block-content a:link{
+    color: #6c8fef;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.event-block-content a:visited, 
+.event-block-content a:active{
+    color: #6c8fef;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.event-block:last-child{
+	background-color:#cecbcb;
+}
+
+/* End of practice section */
+
+/* <!-- Start of Learning section --> */
+/* <!-- End of Learning section --> */
+    
+/* <!-- Start of Thesis section --> */
+/* <!-- End of Thesis section --> */
+    
+/* <!-- Start of footer --> */
+/* <!-- End of footer --> */
+
+/* End of desktop view */
+
+/* --------------------------------------------- */
+/* Start of mobile view */
+/* --------------------------------------------- */
+
+/* Start of NAV section */
+/* End of NAV section */
+
+/* Start of Header section */
+/* End of Header section */
+
+/* Start of practice section */
+/* End of practice section */
+
+/* <!-- Start of Learning section --> */
+/* <!-- End of Learning section --> */
+    
+/* <!-- Start of Thesis section --> */
+/* <!-- End of Thesis section --> */
+    
+/* <!-- Start of footer --> */
+/* <!-- End of footer --> */
+
+/* End of mobile view */
