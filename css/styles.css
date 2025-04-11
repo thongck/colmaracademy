@@ -232,12 +232,241 @@ html, body {
 /* End of practice section */
 
 /* <!-- Start of Learning section --> */
+
+    /* ******************************* */
+
+    #learningsection {
+        width: 80;
+        margin: 0px 72px;
+        /*height: 100dvh;*/
+        grid-column: full--start / full--end;
+        background-color: lightgrey;
+        /* border: 1px black solid; */
+     }
+
+     .sectiontitle {
+        font-size: x-large;
+        font-weight: 800;
+        text-align: center;
+        margin: 32px 0;
+        grid-column: full--start / full--end;
+        
+     }
+
+     .showcasecontainer {
+         display: grid;
+         grid-template-columns:repeat(3,1fr);
+         gap: 24px;
+     }
+
+     .projectcard {
+         font-size: small;
+         background-color: white;
+         /* border-bottom-right-radius: 10px;
+         border-bottom-left-radius: 10px; */
+         padding: 0 0 20px 0;
+        
+     }
+
+     .projectcard a{
+        text-decoration: none;
+        color: black;
+     }
+     .projectcard h4 .projectcard p{
+         padding-left: 16px;
+         
+     }
+
+     .projectcard h4 {
+        font-size: large;
+        padding-top: 16px;
+        margin-left: 16px;
+     }
+
+     .projectcard .scope {
+        font-size: medium;
+        margin: 8px 16px
+
+     }
+     
+     .projectcard p {
+        font-size: 12px;
+        margin-left: 16px;
+
+     }
+
+     .projectcard img {
+         display: block;
+         width: 100%;
+         /* height: auto; */
+         /* border-top-left-radius: 10px;
+         border-top-right-radius: 10px; */
+         margin-bottom: 10px;
+         background-size: cover;
+         background-position-x: center;
+         background-position-y: center;
+         background-repeat: no-repeat;
+         background-image: url("/img/imgplaceholder.jpg");
+     }
+
+     .top {
+         display: block;
+         padding: 10px 0 10px 0;
+         text-align: center;
+         font-size: small;
+     }
+
+     .top a{
+         color: #4bb9b9;
+     }
+     .top a:hover{
+         color: #fdbd31;
+     }
+
+ /* ***************************** */
+ 
 /* <!-- End of Learning section --> */
     
 /* <!-- Start of Thesis section --> */
+.thesis-heading {
+    width: 80;
+    margin: 0px 72px;
+    /*height: 100dvh;*/
+    grid-column: full--start / full--end;
+    /* border: 1px black solid; */
+ }
+
+ .thesis-title {
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center;
+    margin: 32px 0;
+    /* border: 1px black solid; */
+ }
+
+
+.thesis{
+    background-color: #f0f0f0;
+    padding: 0 1.5rem;
+    /* border: 1px black solid; */
+}
+
+.thesis img{
+    width: 100%;
+    height: auto;
+}
+
+.thesis h3{
+    padding: 2rem 0 1.5rem 0;
+    color: #484848;
+}
+
+.thesis p{
+    font-size: small;
+    color: #484848;
+}
+
+.thesis-events{
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    border-left: 1px solid #e7e7e7;
+    padding-top: 1rem;
+    /* border: 1px black solid; */
+}
+
+.thesis-event-block{
+    display: grid;
+    grid-template-columns: 0.35fr 0.65fr;
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: small;
+    color: #484848;;
+}
+
+.thesis-event-block img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.thesis-event-block-content{
+    margin: 0 2rem;
+}
+
+.thesis-event-block-content h4{
+    font-size: small;
+}
+
+.thesis-event-block-content p{
+    font-size:x-small;
+    padding: 0.25rem 0;
+}
+
+.thesis-event-block-content a:link{
+    color: #6c8fef;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.thesis-event-block-content a:visited, 
+.thesis-event-block-content a:active{
+    color: #6c8fef;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.thesis-event-block:first-child{
+	background-color:#cecbcb;
+}
+
+
 /* <!-- End of Thesis section --> */
     
 /* <!-- Start of footer --> */
+.desktop-footer {
+    grid-column: full--start/full--end;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.desktop-footer > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-name{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #484848;
+    margin: 1rem 1.5rem;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+}
+
+.footer-list a {
+    display: inline-block;
+    text-decoration: none;
+    color: #828282;
+    font-size: 1rem;
+    margin: 0 10px;
+
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.footer-item:last-child {
+    margin-right: 1.5rem;
+}
 /* <!-- End of footer --> */
 
 /* End of desktop view */
@@ -246,22 +475,305 @@ html, body {
 /* Start of mobile view */
 /* --------------------------------------------- */
 
+.mobile-nav{
+    display: none;
+}
+
+.events-mobile{
+    display: none;
+}
+
+.learning-mobile {
+    display: none;
+}
+
+.thesis-mobile {
+    display: none;
+}
+
+.mobile-footer {
+    display: none;
+}
+
+/* if the width of screen is 640px, aka 40rem */
+@media screen and (max-width: 40rem ) {
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .container{ 
+        max-width: 100dvw;
+    }
+
 /* Start of NAV section */
+
+    .mobile-nav {
+        display:flex;
+        grid-column: full--start/full--end;
+        align-items: center;
+        width: auto;
+        height: 4rem;
+        justify-content: space-around;
+    }
+
+    
 /* End of NAV section */
 
 /* Start of Header section */
+
+
+    .header-picture {
+        grid-column: full--start/full--end;
+    }
+
+    .header-picture img{
+        padding: 0;
+        width: 100%;                /* !! ADDED */
+        object-fit: cover;          /* !! ADDED: Ensures the image covers the entire space without distortion */
+    }
+
+    .header-content{
+        /* display: flex; */                        /* !! REMOVED */
+        grid-column: full--start / full--end; /* !! REMOVED */
+        
+        display: flex;                              /* !! ADDED */
+        flex-direction: column;                     /* !! ADDED */
+        flex-grow: 1;                               /* !! ADDED */
+
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    .header-content div h1{
+        font-size: xx-large;
+        padding: 0 0 2rem 0;
+    }
+
+    .header-content div h2{
+        font-size: larger;
+        padding: 0 0 1.5rem 0; 
+    }
+
+    .header-content div{
+        display: block;
+        width: 100%;
+    }
+    
+    .header-content div a:link{
+        display: block;
+        width: 100%;
+        align-self: stretch;
+        background-color: rgb(72, 72, 72, 0.5);
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    /* hover effect for call to action link */
+    .header-content div a:hover{
+        background-color: #484848;
+    }
+    
+    .header-content div a:visited, 
+    .header-content div a:active{
+        color: #fff;
+        text-decoration: none;
+        background-color: rgb(72, 72, 72, 0.5);
+    }
 /* End of Header section */
 
 /* Start of practice section */
+/* Hide desktop version of practice */
+.practice{
+    display: none;
+}
+
+.events{
+    display: none;
+}
+
+.events-mobile{
+    display: grid;
+    padding: 1rem;
+    grid-column: full--start / full--end;
+}
+
+.events-mobile .event-block{
+    grid-template-columns: 1fr;
+}
+
+.events-mobile .event-block img{
+    padding: 0;
+}
+
+.events-mobile .event-block-content{
+    padding: 2rem 0 2rem 1rem;
+    margin: 0;
+    
+}
+
+.events-mobile .event-block-content h4{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.events-mobile .event-block-content p{
+    font-size: large;
+    font-weight: lighter;
+}
+
+.events-mobile .event-block-content a:link{
+    font-size: large;
+}
+    
 /* End of practice section */
 
 /* <!-- Start of Learning section --> */
+/* Hide desktop version of learning */
+#learningsection {
+    display: none;
+}
+
+.learning-mobile{
+    /* display: grid;
+    
+    grid-column: full--start / full--end; */
+    display:block;
+    grid-column: full--start / full--end;
+    padding: 1rem;
+    
+}
+
+.learning-section-mobile {
+    
+    font-weight: 400;
+    text-align: left;
+    margin: 1rem 0;
+    grid-column: full--start / full--end;
+    /* border: black 1px solid; */
+    background-color: lightgrey;
+    padding: 16px;
+    
+     
+ }
+.sectiontitle-mobile { 
+    
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center; 
+    margin: 1rem;
+    grid-column: full--start / full--end;
+    /* border: black 1px solid; */
+    height: 1rem;
+    padding: 2rem 2rem;
+     
+ }
+
+.learning-section-mobile a:link,
+.learning-section-mobile a:visited,
+.learning-section-mobile a:active {
+    font-size: x-large;
+    text-decoration: none;
+    margin: 2rem 1rem 1rem 1rem;
+    color: black;
+   
+}
+
+
+
 /* <!-- End of Learning section --> */
     
 /* <!-- Start of Thesis section --> */
+/* Hide desktop version of thesis */
+.thesis{
+    display: none;
+}
+
+.thesis-events{
+    display: none;
+}
+.thesis-heading{
+    display: none;
+}
+
+.thesis-mobile{
+    /* display: grid;
+    
+    grid-column: full--start / full--end; */
+    display:block;
+    grid-column: full--start / full--end;
+    padding: 1rem;
+    /* border: black 1px solid; */
+    
+}
+
+.thesis-section-mobile {
+    
+    font-weight: 400;
+    text-align: left;
+    /* margin: 1rem 0; */
+    grid-column: full--start / full--end;
+    /* border: black 1px solid; */
+    background-color: lightgrey;
+    /* padding: 16px; */
+    
+     
+ }
+.thesis-sectiontitle-mobile { 
+    
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: center; 
+    margin: 1rem;
+    grid-column: full--start / full--end;
+    /* border: black 1px solid; */
+    height: 1rem;
+    padding: 2rem 2rem;
+     
+ }
+
+.thesis-section-mobile a:link{
+    font-size: x-large;
+    text-decoration: none;
+    margin: 2rem 1rem 1rem 1rem;
+    color: black;
+   
+}
+
+
 /* <!-- End of Thesis section --> */
     
 /* <!-- Start of footer --> */
+/* Hide desktop footer */
+.desktop-footer {
+    display: none;
+}
+
+.mobile-footer {
+    grid-column: full--start/full--end;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.mobile-footer > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-footer-logo-name{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #484848;
+    padding: 1rem 2rem;
+}
+
+
 /* <!-- End of footer --> */
+}    /*   @media screen and (max-width: 40rem )  */
 
 /* End of mobile view */
